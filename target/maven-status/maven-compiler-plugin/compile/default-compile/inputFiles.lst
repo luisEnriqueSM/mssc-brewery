@@ -1,0 +1,9 @@
+/Users/luisenrique/Documents/Programming/Java/Microservices/mssc-brewery/src/main/java/org/beer/works/msscbrewery/MsscBreweryApplication.java
+/Users/luisenrique/Documents/Programming/Java/Microservices/mssc-brewery/src/main/java/org/beer/works/msscbrewery/services/BeerService.java
+/Users/luisenrique/Documents/Programming/Java/Microservices/mssc-brewery/src/main/java/org/beer/works/msscbrewery/services/BeerServiceImpl.java
+/Users/luisenrique/Documents/Programming/Java/Microservices/mssc-brewery/src/main/java/org/beer/works/msscbrewery/services/CustomerService.java
+/Users/luisenrique/Documents/Programming/Java/Microservices/mssc-brewery/src/main/java/org/beer/works/msscbrewery/services/CustomerServiceImpl.java
+/Users/luisenrique/Documents/Programming/Java/Microservices/mssc-brewery/src/main/java/org/beer/works/msscbrewery/web/controller/BeerController.java
+/Users/luisenrique/Documents/Programming/Java/Microservices/mssc-brewery/src/main/java/org/beer/works/msscbrewery/web/controller/CustomerController.java
+/Users/luisenrique/Documents/Programming/Java/Microservices/mssc-brewery/src/main/java/org/beer/works/msscbrewery/web/model/BeerDto.java
+/Users/luisenrique/Documents/Programming/Java/Microservices/mssc-brewery/src/main/java/org/beer/works/msscbrewery/web/model/CustomerDto.java
