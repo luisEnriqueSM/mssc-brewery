@@ -1,5 +1,7 @@
 package org.beer.works.msscbrewery.web.controller;
 
+import jakarta.validation.Valid;
+import jakarta.validation.constraints.NotNull;
 import org.beer.works.msscbrewery.services.CustomerService;
 import org.beer.works.msscbrewery.web.model.CustomerDto;
 import org.springframework.http.HttpHeaders;
@@ -20,12 +22,12 @@ public class CustomerController {
     }
 
     @GetMapping("/{customerId}")
-    public ResponseEntity<CustomerDto> getCustomer(@PathVariable("customerId") UUID customerId){
+    public ResponseEntity<CustomerDto> getCustomer(@NotNull @PathVariable("customerId") UUID customerId){
         return new ResponseEntity<>(customerService.getCustomerById(customerId), HttpStatus.OK);
     }
 
     @PostMapping
-    public ResponseEntity handlePost(@RequestBody CustomerDto customerDto){
+    public ResponseEntity handlePost(@Valid @NotNull @RequestBody CustomerDto customerDto){
         CustomerDto savedDto = customerService.saveNewCustomer(customerDto);
 
         HttpHeaders headers = new HttpHeaders();
@@ -37,7 +39,7 @@ public class CustomerController {
 
     @PutMapping("/{customerId}")
     @ResponseStatus(HttpStatus.NO_CONTENT)
-    public void handleUpdate(@PathVariable("customerId") UUID customerId, @RequestBody CustomerDto customerDto){
+    public void handleUpdate(@PathVariable("customerId") UUID customerId, @Valid @RequestBody CustomerDto customerDto){
         customerService.updateCustomer(customerId, customerDto);
     }
 
