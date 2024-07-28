@@ -1,5 +1,6 @@
 /Users/luisenrique/Documents/Programming/Java/Microservices/mssc-brewery/src/main/java/org/beer/works/msscbrewery/MsscBreweryApplication.java
 /Users/luisenrique/Documents/Programming/Java/Microservices/mssc-brewery/src/main/java/org/beer/works/msscbrewery/domain/Beer.java
+/Users/luisenrique/Documents/Programming/Java/Microservices/mssc-brewery/src/main/java/org/beer/works/msscbrewery/domain/Customer.java
 /Users/luisenrique/Documents/Programming/Java/Microservices/mssc-brewery/src/main/java/org/beer/works/msscbrewery/services/BeerService.java
 /Users/luisenrique/Documents/Programming/Java/Microservices/mssc-brewery/src/main/java/org/beer/works/msscbrewery/services/BeerServiceImpl.java
 /Users/luisenrique/Documents/Programming/Java/Microservices/mssc-brewery/src/main/java/org/beer/works/msscbrewery/services/CustomerService.java
@@ -11,6 +12,7 @@
 /Users/luisenrique/Documents/Programming/Java/Microservices/mssc-brewery/src/main/java/org/beer/works/msscbrewery/web/controller/MvcExeptionHandler.java
 /Users/luisenrique/Documents/Programming/Java/Microservices/mssc-brewery/src/main/java/org/beer/works/msscbrewery/web/controller/v2/BeerControllerV2.java
 /Users/luisenrique/Documents/Programming/Java/Microservices/mssc-brewery/src/main/java/org/beer/works/msscbrewery/web/mappers/BeerMapper.java
+/Users/luisenrique/Documents/Programming/Java/Microservices/mssc-brewery/src/main/java/org/beer/works/msscbrewery/web/mappers/CustomerMapper.java
 /Users/luisenrique/Documents/Programming/Java/Microservices/mssc-brewery/src/main/java/org/beer/works/msscbrewery/web/model/BeerDto.java
 /Users/luisenrique/Documents/Programming/Java/Microservices/mssc-brewery/src/main/java/org/beer/works/msscbrewery/web/model/CustomerDto.java
 /Users/luisenrique/Documents/Programming/Java/Microservices/mssc-brewery/src/main/java/org/beer/works/msscbrewery/web/model/v2/BeerDtoV2.java
