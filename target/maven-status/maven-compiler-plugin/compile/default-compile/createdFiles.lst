@@ -23,4 +23,5 @@ org/beer/works/msscbrewery/web/model/v2/BeerStyleEnum.class
 org/beer/works/msscbrewery/domain/Customer$CustomerBuilder.class
 org/beer/works/msscbrewery/web/model/CustomerDto.class
 org/beer/works/msscbrewery/web/controller/v2/BeerControllerV2.class
+org/beer/works/msscbrewery/web/mappers/DateMapper.class
 org/beer/works/msscbrewery/web/controller/BeerController.class

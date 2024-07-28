@@ -4,15 +4,19 @@ import javax.annotation.processing.Generated;
 import org.beer.works.msscbrewery.domain.Beer;
 import org.beer.works.msscbrewery.web.model.BeerDto;
 import org.beer.works.msscbrewery.web.model.v2.BeerStyleEnum;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
 @Generated(
     value = "org.mapstruct.ap.MappingProcessor",
-    date = "2024-07-28T14:14:42-0600",
+    date = "2024-07-28T14:46:56-0600",
     comments = "version: 1.5.5.Final, compiler: javac, environment: Java 21.0.3 (Amazon.com Inc.)"
 )
 @Component
 public class BeerMapperImpl implements BeerMapper {
+
+    @Autowired
+    private DateMapper dateMapper;
 
     @Override
     public BeerDto beerToBeerDto(Beer beer) {
@@ -28,6 +32,7 @@ public class BeerMapperImpl implements BeerMapper {
             beerDto.beerStyle( beer.getBeerStyle().name() );
         }
         beerDto.upc( beer.getUpc() );
+        beerDto.lastUpdatedDate( dateMapper.asOffsetDateTime( beer.getLastUpdatedDate() ) );
 
         return beerDto.build();
     }
@@ -46,6 +51,7 @@ public class BeerMapperImpl implements BeerMapper {
             beer.beerStyle( Enum.valueOf( BeerStyleEnum.class, beerDto.getBeerStyle() ) );
         }
         beer.upc( beerDto.getUpc() );
+        beer.lastUpdatedDate( dateMapper.asTimestamp( beerDto.getLastUpdatedDate() ) );
 
         return beer.build();
     }
